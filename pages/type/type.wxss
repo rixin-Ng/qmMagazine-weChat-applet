@@ -1,0 +1,121 @@
+/* pages/type/type.wxss */
+/* pages/list/list.wxss */
+
+.typeInfo{
+    position: relative;
+}
+.typeInfoImg image{
+    width: 100%;
+    height: 500rpx;
+}
+.typeInfoTitle{
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    bottom: -90rpx;
+    width: 600rpx;
+    right: 75rpx;
+    padding: 20rpx 20rpx;
+}
+.typeInfoTitle .title{
+    font-size: 48rpx;
+}
+.typeInfoTitle .handle{
+    text-align: right;
+    margin-top: 20rpx;
+}
+.typeInfoTitle .handle view{
+    display: inline-block;
+}
+.handle image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.handle button{
+    width: 60rpx;
+    height: 60rpx;
+    background-color: transparent;
+    padding:0rpx;
+    margin-right: 20rpx;
+}
+.handle button::after{
+    border: none;
+}
+.articleListWrap{
+    padding-top: 120rpx;
+}
+
+
+
+/* 文章列表 */
+.articleListWrap{
+    padding: 120rpx 30rpx 0;
+    background-color: #ebebeb;
+}
+.articleList{
+    background-color: #fff;
+    margin-bottom: 30rpx;
+}
+.articleList:last-child{
+    margin-bottom: 0;
+}
+.articleHead{
+    height: 70rpx;
+    line-height: 70rpx;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+}
+.articleHead image{
+    height: 50rpx;
+    width: 50rpx;
+    vertical-align: middle;
+}
+.articleHead text{
+    color: #666;
+    font-size: 28rpx;
+    margin-left: 10rpx;
+}
+.articleCover{
+    margin-top: 10rpx;
+}
+.coverImg{
+    margin-bottom:30rpx;
+}
+.articleCover image{
+    width: 100%;
+}
+.articleCover .articleTitle{
+    margin: 30rpx;
+    font-size: 40rpx;
+}
+.articleHandleBox{
+    display: flex;
+    padding: 20rpx 30rpx;
+    justify-content: space-between;
+}
+.articleHandleBox .publishTime{
+    font-size: 24rpx;
+}
+.articleHandleBox .articleHandle view{
+    display: inline-block;
+}
+.articleHandleBox .articleHandle button{
+    width: 60rpx;
+    height: 60rpx;
+    background-color: transparent;
+    padding:0rpx;
+    margin-right: 20rpx;
+}
+.articleHandleBox .articleHandle button::after{
+    border: none;
+}
+.articleHandleBox .articleHandle image{
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+}
+
+
+
+
+

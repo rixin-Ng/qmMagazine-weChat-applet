@@ -1,0 +1,7 @@
+<!-- components/subscribe/cmp.wxml -->
+<!-- <text>components/subscribe/cmp.wxml</text> -->
+<view class="common {{(authorized== true) && (class == 'subscribe')? 'subscribe':''}}" 
+        catchtap="onTap" 
+        authorized="{{authorized}}">
+    {{(authorized== true) && (class == 'subscribe')?'已订阅':'订阅'}}
+</view>

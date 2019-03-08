@@ -1,0 +1,18 @@
+<!--pages/search/search.wxml-->
+<!-- <text>pages/search/search.wxml</text> -->
+<view class="container">
+    <w-search value="{{searchWord}}" />
+    <view class="loading-wrap" wx:if="{{searching}}">
+         <w-loading class="loading"/>
+    </view>
+    <view class="recommend" wx:if="{{!searching}}">
+        <view class="tag"># {{tag}} ></view>
+        <view class="recommend-list" 
+                wx:for="{{recommend}}" 
+                wx:key="*this">{{item}}</view>
+    </view>
+    <w-articlePullUp article-list="{{articleList}}"
+                     word="{{searchWord}}"
+                     more="{{more}}"
+                     wx:if="{{!searching}}"/>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-articlePullUp":"/components/articlePullUp/cmp",
+    "w-imgBtn": "/components/imgBtn/cmp"
+  }
+}

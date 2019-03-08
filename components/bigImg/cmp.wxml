@@ -1,0 +1,7 @@
+<!--components/bigImg/cmp.wxml-->
+<!-- <text>components/bigImg/cmp.wxml</text> -->
+
+<view >
+    <image class="img-src" mode="widthFix" src="{{imgSrc}}" />
+    <text class="text">{{mainTitle}}</text>
+</view>

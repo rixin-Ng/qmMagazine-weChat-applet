@@ -1,0 +1,10 @@
+<!-- components/articlePullDown/cmp.wxml -->
+<!-- <text>components/articlePullDown/cmp.wxml</text> -->
+<view class="container">
+    <w-article wx:for="{{articleList}}" 
+               wx:key="{{item.artId}}" 
+               articleListDetail="{{item}}" 
+               isLike="{{likeStatus}}" />
+    <w-loading class="loading" hidden="{{!loading}}"/>
+    <text wx:if="{{noMoreData}}" class="no-more">没有更多了</text>
+</view>

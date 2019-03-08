@@ -1,0 +1,68 @@
+<!-- pages/type/type.wxml -->
+<!-- <text>pages/type/type.wxml</text> -->
+<view class="wrap">
+    <view class="typeInfo">
+        <view class="typeInfoImg">
+            <image src="{{typeInfo.imgSrc}}" />
+        </view>
+        <view class="typeInfoTitle">
+            <view>
+                <text class="title">{{typeInfo.title}}</text>
+            </view>
+            <view class="handle">
+                <view>
+                    <button open-type="share">
+                        <image src="/images/icon/Icon_relay.png" />
+                    </button>
+                </view>
+                <view>
+                    <w-more tag="{{'人生整理术'}}" />
+                    <!-- <image bindtap="onMoreTap" data-articleType="{{item.articleType}}" style="" src="/images/icon/Icon_more.png" /> -->
+                </view>
+                
+            </view>
+        </view>
+    </view>
+    <view class="articleListWrap">
+        <view class="articleList" wx:for="{{articleTypeList}}" wx:key="{{id}}" bindtap="onArticleDetailTap" data-articleDetailId="{{item.id}}">
+            <view class="articleHead">
+                <image src="{{item.markPeopleAvatar}}" />
+                <text>{{item.markPeople}}</text>
+                <text>等</text>
+                <text>{{item.markCount}}</text>
+                <text>人马克了</text>
+            </view>
+            <view class="articleCover">
+                <view class="coverImg">
+                    <image mode="widthFix" src="{{item.articleImgSrc}}" />
+                </view>
+                <view class="articleTitle">
+                    <text>{{item.articleTitle}}</text>
+                </view>
+            </view>
+            <view>
+                <view class="articleHandleBox">
+                    <view>
+                        <text class="publishTime">{{item.publishTime}}</text>
+                    </view>
+                    <view class="articleHandle">
+                        <view>
+                            <w-more tag="{{'人生整理术'}}" />
+                            <!-- <image bindtap="onMoreTap" data-articleType="{{item.articleType}}" style="" src="/images/icon/Icon_more.png" /> -->
+                        </view>
+                        <view>
+                            <button open-type="share">
+                                <image src="/images/icon/Icon_relay.png" />
+                            </button>
+                        </view>
+                        <view>
+                            <w-like isLike="true" />
+                            <!-- <image wx:if="{{listLike[index]}}" bindtap="onLikeTap" data-articleIndex="{{index}}" src="/images/icon/Icon_circle_fill.png" />
+                            <image wx:else bindtap="onLikeTap" data-articleIndex="{{index}}" src="/images/icon/Icon_circle.png" /> -->
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

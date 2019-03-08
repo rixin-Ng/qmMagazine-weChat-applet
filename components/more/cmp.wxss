@@ -1,0 +1,5 @@
+/* components/more/cmp.wxss */
+.more{
+    width: 50rpx;
+    height: 50rpx;
+}

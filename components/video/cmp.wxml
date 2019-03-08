@@ -1,0 +1,19 @@
+<!--components/video/cmp.wxml-->
+<!-- <text>components/video/cmp.wxml</text> -->
+<view class="container">
+    <view class="video-wrap">
+        <video hidden="{{showPoster}}" bindended="onVideoEnd" id="{{videoId}}" class="video" src="{{src}}" />
+        <view hidden="{{!showPoster}}" class="gif-wrap">
+            <image class="gif-image"src="{{poster}}" />
+            <view class="btn-wrap" catchtap="onPlayTap">
+                <image class="play-icon" src="image/play.png" />
+                <text class="alltime">{{duration}}</text>
+            </view>
+          
+        </view>
+    </view>
+    <view class="title-container">
+        <text class="text">{{mainTitle}}</text>
+    </view>
+    <view class="mask" catchtap="onStopTap" hidden="{{showPoster}}"></view>
+</view>

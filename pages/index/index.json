@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "w-articlePullUp":"/components/articlePullUp/cmp",
+    "w-nav":"/components/nav/cmp",
+    "w-recommend":"/components/recommend/cmp",
+    "w-tagList":"/components/tagList/cmp",
+    "w-add":"/components/add/cmp",
+    "w-loading":"/components/loading/cmp"
+  }
+}

@@ -1,0 +1,18 @@
+/* components/articlePullDown/cmp.wxss */
+
+.container{
+    margin: 0 auto;
+    padding: 25rpx;
+    background-color: rgba(190, 184, 184, 0.5);
+}
+.loading{
+    margin-top: 20rpx;
+    display: block;
+}
+.no-more{
+    padding-top: 20rpx;
+    font-size: 28rpx;
+    text-align: center;
+    display: block;
+    color: #333;
+}

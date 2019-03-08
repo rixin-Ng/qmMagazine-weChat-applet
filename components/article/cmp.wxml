@@ -1,0 +1,48 @@
+<!-- components/article/cmp.wxml -->
+<!-- <text>components/article/cmp.wxml</text> -->
+<view class="container">
+    <view class="head-container">
+        <image class="head-icon" src="{{articleListDetail.mark.avatar}}" />
+        <text class="head-text">{{articleListDetail.mark.people}}等{{articleListDetail.mark.count}}人马克了</text>
+    </view>
+    <view class="articles">
+        <w-bigImg wx:if="{{articleListDetail.type === 0}}" 
+                  img-src="{{articleListDetail.imgArray[0]}}" 
+                  main-title="{{articleListDetail.mainTitle}}" 
+        />
+        <w-pureText wx:elif="{{articleListDetail.type === 4}}" 
+                    main-title="{{articleListDetail.mainTitle}}"
+                    sub-head="{{articleListDetail.subHead}}"
+        />
+        <w-imgText wx:elif="{{articleListDetail.type === 2}}"
+                   main-title="{{articleListDetail.mainTitle}}"
+                   sub-head="{{articleListDetail.subHead}}" 
+                   img-src="{{articleListDetail.imgArray[0]}}"
+         />
+        <w-nineImg wx:elif="{{articleListDetail.type === 1}}" 
+                   main-title="{{articleListDetail.mainTitle}}}"
+                   img-arr="{{articleListDetail.imgArray}}"
+        />
+        <w-video wx:else
+                 src="{{articleListDetail.video.src}}" 
+                 poster="{{articleListDetail.video.poster}}" 
+                 duration="{{articleListDetail.video.duration}}" 
+                 main-title="{{articleListDetail.mainTitle}}"
+                 video-id="{{articleListDetail.video.id}}" 
+        />
+    </view>
+    <view class="control-container">
+        <view class="tag">
+            <w-tag tag="{{articleListDetail.tag}}" 
+                   tag-id="{{articleListDetail.tagId}}" 
+            />
+        </view>
+        <view class="more-tag">
+            <w-more class="more-box" tag="{{articleListDetail.tag}}" />
+            <w-imgBtn class="more-box img-btn" open-type="share">
+                <image class="img" src="/images/mark/relay.png" slot="img"/>
+            </w-imgBtn>
+            <w-like class="more-box" isLike="{{likeStatus}}" catchlike="onLike" />
+        </view>
+    </view>
+</view>

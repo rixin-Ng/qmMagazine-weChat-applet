@@ -1,0 +1,9 @@
+/* components/add/cmp.wxss */
+.add{
+    display: inline-block;
+    border: 1rpx solid #333;
+    padding: 10rpx 20rpx;
+    font-size: 30rpx;
+    background-color: #111;
+    color: #fff;
+}

@@ -1,0 +1,42 @@
+<!-- pages/index/index.wxml -->
+<!-- <text>pages/index/index.wxml</text> -->
+<!-- <w-bigImg img-src="{{'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1887852189,3372452575&fm=15&gp=0.jpg'}}"
+          main-title="{{'甲方公司了解公司经过开发机构就算了'}}"
+/>
+<w-pureText main-title="{{'发给师傅师傅师傅缸发动机欧派公平死哦苹果IE破上一篇【噢诶图各类考试的结果就色谱'}}"
+            sub-head="{{'峰会上解决方式发生了'}}"
+/>
+<w-imgText main-title="{{'富商大贾给付对价给李杰斯大林格勒打飞机关键是地方'}}"
+           sub-head="{{'东方故事所所所所所过多或'}}" 
+           img-src="{{'http://img0.imgtn.bdimg.com/it/u=2668427340,3397712620&fm=26&gp=0.jpg'}}"
+/> -->
+<!-- <w-nineImg main-title="{{'副书记富商大贾就好了开始的干活偶加你送过来开始的'}}"
+
+/> -->
+<!-- <w-video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+         poster="https://upfile.asqql.com/2009pasdfasdfic2009s305985-ts/2019-1/20191219261351755.gif"
+         duration="41''"
+         main-title="附近的设计分公司监督管理局发送过来看电视" 
+         video-id="video20181025" 
+/> -->
+<!-- <w-tag tag="{{'人生整理术'}}" tag-id="2"/>
+<w-more tag="{{'人生整理术'}}"/>
+<w-like isLike="true" /> -->
+<!-- <w-article wx:for="{{articleList}}"
+           wx:key="{{item.artId}}"
+            articleListDetail="{{item}}" /> -->
+
+
+<w-nav class="nav" catchnav="onNavTap"/>
+<w-recommend class="recommend" magazine-id="{{magazineId}}" recommendInfo="{{recommendInfo}}"/>
+<view class="loading-wrap" wx:if="{{isLoading}}">
+    <w-loading class="loading" />
+</view>
+<w-tagList markType="{{markType}}">
+    <w-add wx:if="{{magazineId == 0}}" slot="before" class="add"/>
+    <view wx:if="{{magazineId == 0}}" slot="after" class="to-catalog" catchtap="onCatalogTap">···</view>
+</w-tagList>
+<w-articlePullUp articleList="{{articleList}}"
+                 more="{{getMore}}"
+                 magazineId="{{magazineId}}" 
+                 isLike="{{likeStatus}}"/>

@@ -1,0 +1,6 @@
+/* components/like/cmp.wxss */
+.like,
+.unlike{
+    width: 50rpx;
+    height: 50rpx;
+}

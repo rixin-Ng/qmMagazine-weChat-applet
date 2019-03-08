@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "w-search": "/components/search/cmp",
+    "w-articlePullUp": "/components/articlePullUp/cmp",
+    "w-loading": "/components/loading/cmp"
+  }
+}

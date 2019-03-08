@@ -1,0 +1,20 @@
+/* pages/search/search.wxss */
+.loading-wrap{
+    margin-top: 50rpx;
+}
+.recommend{
+    width: 700rpx;
+    margin: 50rpx auto;
+    padding: 50rpx 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.tag{
+    font-size: 40rpx;
+    margin-bottom: 20rpx;
+    font-weight: 600;
+}
+.recommend-list{
+    font-size: 28rpx;
+    line-height: 50rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-more":"/components/more/cmp",
+    "w-like":"/components/like/cmp"
+  }
+}

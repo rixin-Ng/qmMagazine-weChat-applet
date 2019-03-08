@@ -1,0 +1,23 @@
+<!-- pages/catalog/catalog.wxml -->
+<!-- <text>pages/catalog/catalog.wxml</text> -->
+<view class="container">
+    <w-search value="{{searchWord}}"/>
+    <view>
+        <view class="myTagList-control">
+            <view class="myMagazine">我的杂志</view>
+            <view class="magazineManage">管理杂志</view>
+        </view>
+        <w-tagList markType="{{myTagList}}">
+            <w-add class="add" slot="before"></w-add>
+        </w-tagList>
+    </view>
+
+<view class="tag-list-container" wx:for="{{tagInfoList}}" wx:key="{{tagInfoItem}}" wx:for-item="tagInfoItem">
+        <view class="title">{{tagInfoItem.title}} ></view>
+        <view class="tag" wx:for="{{tagInfoItem.tagList}}" wx:key="{{tagInfoItem.tagList.tagId}}">
+            <text class="tag-text"># {{item.tag}}</text>
+            <w-subscribe authorized="{{authorized}}" tag="{{item.tag}}" bindtap="onSubscribeList" tagId="{{item.tagId}}"/>
+
+        </view>
+    </view>
+</view>
