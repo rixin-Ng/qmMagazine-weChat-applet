@@ -11,14 +11,13 @@
 5. 文章列表加载模块：上拉页面绑定下拉触底事件，动态获取和更新渲染当前文章列表，展示更多
 6.杂志标签订阅管理模块：给标签绑定点击事件，动态改变已订阅的标签列表
 7.关键字搜索模块：输入关键字跳转页面，请求数据渲染页面
-ps：测试版目前只支持搜索关键字"读书"
+ps：测试版目前只支持搜索关键字"读书"  
 ![](https://github.com/rixin-Ng/qmMagazine-weChat-applet/raw/master/showImg/1.png)
 ![](https://github.com/rixin-Ng/qmMagazine-weChat-applet/raw/master/showImg/2.png)
-![](https://github.com/rixin-Ng/qmMagazine-weChat-applet/raw/master/showImg/3.png)
 ![](https://github.com/rixin-Ng/qmMagazine-weChat-applet/raw/master/showImg/4.png)
 ![](https://github.com/rixin-Ng/qmMagazine-weChat-applet/raw/master/showImg/5.png)
 ![](https://github.com/rixin-Ng/qmMagazine-weChat-applet/raw/master/showImg/6.png)  
 
 ### 项目运行
 1. $ git clone https://rixin-ng.github.io/qmMagazine-weChat-applet/
-2. 下载`微信web开发者工具`并导入项目即可看到效果
+2. 下载 `微信web开发者工具` 并导入项目即可看到效果
